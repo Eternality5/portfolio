@@ -1,5 +1,6 @@
 <script>
 	import {Avatar} from "@skeletonlabs/skeleton"
+	import ProjectCard from "./ProjectCard.svelte";
 </script>
 
 <svelte:head>
@@ -7,7 +8,7 @@
 	<meta name="Home Page" content="Portfolio website for Maximilien Schuller" />
 </svelte:head>
 
-<section class="text-middle mx-10 text-center">
+<section class="text-middle p-20 text-center">
 	<div class="flex justify-center py-2">
 		<Avatar src="avatar.jpg" width="w-64" rounded="rounded-full" initials="MS" />
 	</div>
@@ -34,26 +35,33 @@
 </div>
 </section>
 
-<!-- <section>
-	<h2 class="h2">My Projects</h2>
-
+<section class="p-20">
+	<h1 class="h1">My Projects</h1>
 	<div class="grid grid-cols-1 lg:!grid-cols-3 content-start gap-4">
-		<a href="https://github.com/Eternality5/g1-serp2023" class="card p-4">
-			<header class="card-header">Deidentification Framework</header>
-			<section class="p-4">content</section>
-			<footer class="card-footer">By Max Schuller & Vinay Kumar</footer>
-		</a>
-
-		<a href="https://github.com/Eternality5/g1-serp2023" class="card p-4">
-			<header class="card-header">header</header>
-			<section class="p-4">content</section>
-			<footer class="card-footer">footer</footer>
-		</a>
-
-		<a href="https://github.com/Eternality5/g1-serp2023" class="card p-4">
-			<header class="card-header">header</header>
-			<section class="p-4">content</section>
-			<footer class="card-footer">footer</footer>
-		</a>
+		<ProjectCard 
+			url="https://github.com/Eternality5/portfolio" 
+			title="My Portfolio"
+			imgSrc="cardheaders/portfolio.png" 
+			imgAlt="me"
+			content="This is the website you are looking at right now. I created this website as a way to showcase the projects I
+			have worked on and to learn how to use SvelteKit." 
+			footer="By Maximilien Schuller" />
+		<ProjectCard 
+			url="https://github.com/Eternality5/g1-serp2023" 
+			title="De-identification Framework"
+			imgSrc="avatar.jpg" 
+			imgAlt="me"
+			content="This is my honours project which I created using Django and HTMX. The application helps users to determine
+			what the risks are with releasing their research data to the public." 
+			footer="By Maximilien Schuller, Vinay Kumar & SA Health" />
+		<ProjectCard 
+			url="https://github.com/Eternality5/portfolio" 
+			title="Predicting Popularity of Programming Languages"
+			imgSrc="avatar.jpg" 
+			imgAlt="Graph"
+			content="A research paper I wrote where I analyse the Stack Overflow developer survey to determine if it can be used to
+			predict trends in the popularity of programming languages." 
+			footer="By Maximilien Schuller" />
 	</div>
-</section> -->
+	
+</section>
