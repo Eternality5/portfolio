@@ -11,7 +11,12 @@
 				"svelte.svelte-vscode"
 			]
 		}
-	}
+	},
+
+	"postCreateCommand": [
+		"echo alias npm=\\'pnpm\\' >> /etc/bash.bashrc",
+		"echo alias yarn=\\'pnpm\\' >> /etc/bash.bashrc"
+	]
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
