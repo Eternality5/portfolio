@@ -1,11 +1,8 @@
 <script>
 	import github from '$lib/images/github.svg';
-	import NavBar from './NavBar.svelte'
 </script>
 
 <header>
-	<NavBar />
-
 	<div class="corner">
 		<a href="https://github.com/Eternality5">
 			<img src={github} alt="GitHub" />
