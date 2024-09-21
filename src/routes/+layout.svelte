@@ -1,11 +1,9 @@
 <script>
 	import { AppShell } from '@skeletonlabs/skeleton';
-import '../app.pcss';
-	import Header from './Header.svelte';
+	import '../app.pcss';
 </script>
 
-<AppShell slotSidebarLeft>
-	<Header slot="header" />
+<AppShell>
 	<div class="">
 		<slot />
 	</div>
