@@ -8,7 +8,7 @@
 	<meta name="Home Page" content="Portfolio website for Maximilien Schuller" />
 </svelte:head>
 
-<section class="text-middle p-20 text-center">
+<section class="p-10 text-center">
 	<div class="flex justify-center py-2">
 		<Avatar src="avatar.jpg" width="w-64" rounded="rounded-full" initials="MS" />
 	</div>
@@ -35,24 +35,28 @@
 	</div>
 </section>
 
-<section class="flex">
-	<div class="justify-center p-20"></div>
+<section class="m-6 grid grid-cols-1 justify-items-center">
+	<ProjectCard
+		url="https://github.com/Eternality5/rmse-want-vs-work"
+		title="Predicting Programing Lanuage Adoption"
+		content="An investigation into predicting programming language adoption using the results of the StackOverflow
+		Developer Survey. This investigation focuses more specifically on if the most loved programming languages
+		catagory is a good heuristic for determining future most popular lanuguages. I decided to research this area
+		as oftern the languages that are loved the most are generally not the most popular."
+		footer="15th June 2023"
+	/>
 	<ProjectCard
 		url="https://github.com/Eternality5/portfolio"
 		title="My Portfolio"
-		imgSrc="cardheaders/portfolio.png"
-		imgAlt="me"
 		content="This is the website you are looking at right now. I created this website as a way to showcase the projects I
 			have worked on and to learn how to use SvelteKit."
-		footer="By Maximilien Schuller"
+		footer="21st August 2024"
 	/>
 	<ProjectCard
-		url="https://github.com/Eternality5/g1-serp2023"
+		url="https://github.com/Eternality5/deidentifier"
 		title="De-identification Framework"
-		imgSrc="avatar.jpg"
-		imgAlt="me"
 		content="This is my honours project which I created using Django and HTMX. The application helps users to determine
 			what the risks are with releasing their research data to the public."
-		footer="By Maximilien Schuller, Vinay Kumar & SA Health"
+		footer="31st November 2023"
 	/>
 </section>

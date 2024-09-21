@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      pnpm:
+        specifier: ^9.11.0
+        version: 9.11.0
     devDependencies:
       '@fontsource/fira-mono':
         specifier: ^4.5.10
@@ -1281,6 +1285,11 @@ packages:
   playwright@1.47.1:
     resolution: {integrity: sha512-SUEKi6947IqYbKxRiqnbUobVZY4bF1uu+ZnZNJX9DfU1tlf2UhWfvVjLf01pQx9URsOr18bFVUKXmanYWhbfkw==}
     engines: {node: '>=18'}
+    hasBin: true
+
+  pnpm@9.11.0:
+    resolution: {integrity: sha512-CiA/+u1aP2MkLNBkyPtYkjZsED4ygHkxj3gGLyTqjJ1QvGpHqjVnyr79gk0XDnj6J0XtHxaxMuFkNhRrdojxmw==}
+    engines: {node: '>=18.12'}
     hasBin: true
 
   postcss-import@15.1.0:
@@ -2965,6 +2974,8 @@ snapshots:
       playwright-core: 1.47.1
     optionalDependencies:
       fsevents: 2.3.2
+
+  pnpm@9.11.0: {}
 
   postcss-import@15.1.0(postcss@8.4.47):
     dependencies:
